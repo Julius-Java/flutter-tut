@@ -111,13 +111,13 @@ print(s2);
 To create a multi-line string, use a triple quote with either single or double quotation marks:
 
 ```dart
-        var s1 = '''
-        You can create
-        multi-line strings like this one.
-        ''';
+var s1 = '''
+You can create
+multi-line strings like this one.
+''';
 
-        var s2 = """This is also a
-        multi-line string.""";
+var s2 = """This is also a
+multi-line string.""";
 ```
 
 ## Booleans
