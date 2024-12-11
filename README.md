@@ -120,7 +120,8 @@ To create a multi-line string, use a triple quote with either single or double q
         multi-line string.""";
 ```
 
-### Booleans
+## Booleans
+
 A boolean in programming is a data type that represents only two possible values: `true` or `false`, and dart has it as a built-in data type.
 
 To represent boolean values in dart, the `bool` keyword is used.
@@ -129,3 +130,41 @@ To represent boolean values in dart, the `bool` keyword is used.
         bool isRaining = true;
         bool isSunny = false;
 ```
+
+### 📝 Exercises!!!
+
+#### 1. Numbers Exercise
+
+Task:
+Create a Dart program that takes two numbers (an `int` and a `double`), adds them, and prints the result.
+
+#### 2. Strings Exercise
+
+Task:
+Write a Dart program that asks for a student's name and favorite subject, then prints a sentence like:
+
+<details>
+  <summary>Solution</summary>
+
+```dart
+import 'dart:io'; // Required for reading user input
+
+void main() {
+ // Asking for the student's name
+ stdout.write("Enter the student's name: ");
+ String name = stdin.readLineSync() ?? '';
+
+ // Asking for the favorite subject
+ stdout.write("Enter the favorite subject: ");
+ String subject = stdin.readLineSync() ?? '';
+
+ // Displaying the message
+ print("$name's favorite subject is $subject.");
+}
+```
+</details>
+
+#### 3. Booleans Exercise
+
+Task:
+Write a program that checks if a number is greater than 50. If it is, print `true`; otherwise, print `false`.
